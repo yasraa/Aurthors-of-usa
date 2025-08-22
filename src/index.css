@@ -1,0 +1,19 @@
+
+:root {
+  --blue:#051F45;       /* Royal Blue */
+  --red: #790604;        /* Cherry Red */
+  --light-blue: #A3C4EB; /* Ocean */
+  --pearl: #FBF9E4;      /* Pearl Perfect */
+  --shellstone: #cfc7c8; /* Shellstone */
+  --pink:#fce7e7
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}

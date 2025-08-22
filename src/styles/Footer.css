@@ -1,0 +1,150 @@
+.btom{
+    background-color: var(--blue);
+    color: #333;
+    padding: 20px 60px;
+list-style: none;
+}
+.first-top h2, .second-top h2 {
+    color: var(--pearl);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.first-top li, .second-top li {
+    color: #333;
+    font-size: 13px;
+    font-weight: 100;
+    list-style: none;
+    padding: 5px 10px;
+}
+.first-top,  .second-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding: 20px 30px;
+   
+
+}
+.first-top > *,
+.second-top > * {
+  border-left: 1px solid #696969;
+}
+
+.first-top li a,
+.second-top li a {
+  color: #696969; /* or var(--pearl), or whatever */
+  text-decoration: none; /* removes underline */
+}
+
+.first-top li a:hover,
+.second-top li a:hover {
+  color: var(--pearl); /* hover effect if you want */
+}
+.copy{
+    background-color: var(--blue);
+    color: var(--pearl);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.copy img{
+    width: 200px;
+
+}
+.logos{
+      background-color: var(--blue);
+    color: var(--pearl);
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #696969;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.ftop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+.right-footer{
+    background-image: url('../assets/contact-image.jpg');
+      background-size: cover;   /* makes it fill the container */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* avoids tiling */
+  display: flex;
+  justify-content: end;
+  height: 80vh;
+  color: var(--pearl);
+padding-right: 120px;
+align-items: center;
+}
+.con-foot{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.con-foot form input,.con-foot form textarea{
+    background: transparent;
+    border: 1px solid var(--pearl);
+}
+.con-foot form input::placeholder{
+    color: var(--pearl);
+}
+.con-foot form textarea::placeholder{
+    color: var(--pearl);
+}
+.con-foot h2{
+    font-size: 35px;
+}
+.con-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con-btn button{
+    padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+   background-color: var(--red);
+  color: var(--pearl);
+   transition: all 0.3s ease; /* smooth animation */
+}
+.con-btn button:hover {
+  background-color: #333;
+  color: var(--pearl);
+  transform: translateY(-1px);
+}
+@media (max-width: 900px) {
+    .btom{
+        padding: 10px 20px;
+    }
+    .first-top > *,
+.second-top > * {
+ width: 100px;
+ height: fit-content;
+}
+.first-top,.second-top{
+    padding: 0px;
+    flex-wrap: wrap;
+}
+.five,.three{
+    display: none;
+}
+.first-top li {
+    padding: 2px 5px;
+    font-size: 10px;
+}
+}

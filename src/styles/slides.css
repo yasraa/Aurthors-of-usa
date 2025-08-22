@@ -1,0 +1,123 @@
+.slco{
+    display: flex;
+    text-align: start;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.slco img{
+    width: 326px;
+    height: auto;
+}
+.slco-h{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.slco-h h2{
+    font-size: 35px;
+}
+.sec-slide{
+    background: var(--blue);
+    padding-top: 20px;
+    color: var(--pearl);
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sec-slide h2{
+    font-size: 35px;
+    text-align: center;
+}
+.sec-slide-images{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.img-gallery{
+          display: flex;
+          gap: 10px 20px;
+          width:70vw;
+          padding:10px;
+          flex-wrap: wrap;
+}
+.img-gallery img{
+width: auto;
+              height: 250px;
+              object-fit: cover;
+              border-radius: 5px;
+}
+.sec-slide-images button{
+    border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              padding: 10px;
+}
+.sec-slide-main{
+    padding: 50px 100px;
+    text-align: center;
+}
+.sec-slide-btn{
+    margin-bottom: 20px;
+}
+.sec-slide-btn button{
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+}
+@media (max-width: 945px) {
+    .sec-slide-btn button{
+        padding: 5px;
+    }
+    .sec-slide-main{
+    padding: 30px 30px;
+}
+.sec-slide h2{
+    font-size: 23px;
+}
+.sec-slide p{
+    display: none;
+}
+.img-gallery img{
+    height: 100px;
+    width: auto;
+}
+.img-gallery {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.sec-slide{
+    height: fit-content;
+}
+}
+
+@media (max-width: 745px) {
+    .sec-slide-main{
+    padding: 20px 20px;
+}
+.sec-slide{
+    gap: 10px;
+}
+.sec-slide-images{
+    margin-bottom: 0px;
+}
+.sec-slide-images button{
+    padding: 5px;
+
+}
+    .sec-slide h2 {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,25 @@
+.location{
+    height: 50vh;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.location h4{
+    font-size: 35px;
+    color: var(--blue);
+}
+.cities ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+    gap: 20px;
+}
+.cities ul li{
+    list-style: none;
+}
+.cities ul li a{
+    color: var(--blue);
+}

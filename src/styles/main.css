@@ -1,0 +1,183 @@
+.achievment{
+    display: flex;
+    width: 100vw;
+    color: var(--pearl);
+    background-color: var(--red);
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 100px;
+}
+.achievment h3{
+    width: 20vw;
+}
+.ach-img{
+    display: flex;
+    gap: 10px;
+}
+.ach-img img{
+    width: 100px;
+    height: auto;
+}
+.main-one{
+    display: flex;
+    padding: 20px 100px;
+    height: 90vh;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blue);
+    height: 70vh;
+}
+.sis{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sis h3{
+    font-size: 35px;
+}
+.main-two{
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.main-two div{
+    width: 250px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    color: var(--pearl);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+}
+
+.main-two div img{
+    width: 70px;
+height: auto;
+}
+.main-three{
+    display: flex;
+    background-color: var(--red);
+    color: var(--pearl);
+    padding: 20px 100px;
+    height: 60vh;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.main-three-right img{
+    position: relative;
+    top: -75px;
+}
+.main-three-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+}
+.main-three-left .first-para{
+    font-size: 35px;
+    font-weight: bold;
+}
+.main-three-btn button{
+     background-color: var(--blue);
+  color: var(--pearl);
+  padding: 10px 45px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: all 0.3s ease; /* smooth animation */
+}
+.main-three-btn button:hover{
+     background-color: #333;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 945px) {
+    .main-three-right{
+        display: none;
+    }
+    .main-three-btn button{
+        padding: 10px 20px;
+    }
+    .achievment{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .achievment h3{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .ach-img img{
+        width: 70px;
+    }
+    .ach-img{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-one{
+        height: fit-content;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .sis h3{
+        font-size: 20px;
+    }
+    .sis{
+        text-align: center;
+    }
+    .sis p{
+        font-size: 12px;
+    }
+    .main-one-left img{
+      width: 300px;
+      height: auto;
+    }
+    .main-two{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .main-three{
+        padding: 20px;
+        height: 45vh;
+        margin-bottom: 20px;
+    }
+    .main-three-left{
+        gap: 8px;
+    }
+    .main-three-left .first-para{
+        font-size: 25px;
+    }
+    .main-three-left .second-para{
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 750px) {
+.main-two div{
+     width: 70vw;
+     padding: 10px;
+     height: 27vh;
+     margin-top:10px ;
+}
+.main-two p{
+    font-size: 12px;
+}
+.main-two div img{
+    width: 40px;
+height: auto;
+}
+}

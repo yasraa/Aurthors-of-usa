@@ -1,0 +1,14 @@
+.faq-container{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px ;
+}
+.faq-container h3{
+    font-size: 35px;
+    color: var(--blue);
+    margin-bottom:20px ;
+}

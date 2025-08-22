@@ -1,0 +1,239 @@
+.navs{
+      position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.thead{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    width: 100vw;
+    padding-right: 25px;
+    height: 5vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.dropdown-menu li a {
+  color: black; /* or whatever you want */
+}
+.phone, .mail{
+margin-left: 20px;
+align-items: center;
+display: flex;
+}
+.phone-icon, .mail-icon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+.phone-and-mail{
+    display: flex;
+    align-items: center;
+}
+.socials span{
+    margin-left: 10px;
+}
+.socials{
+  display: flex;
+}
+@media (max-width: 768px) {
+  .socials {
+    display: none;
+  }.thead{
+    font-size: 10px;
+  }
+  .phone, .mail{
+margin-left: 10px;
+align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Base Navbar ===== */
+.navbar {
+  background: var(--shellstone);
+  padding: 10px 20px;
+  display: flex;
+  color: black;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  color: black;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: color 0.3s;
+  display: flex;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: lighter;
+  align-items: anchor-center;
+}
+
+.he{
+  display: flex;
+  align-items: center;
+
+}
+
+.arrow-icon{
+  display: flex;
+  align-items: center ;
+  justify-content: center ;
+}
+
+.nav-item:hover {
+  color: var(--red);
+}
+
+.dropdown-menu {
+  color: black;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: var(--shellstone);
+  list-style: none;
+  padding: 10px 0;
+    width: max-content;    /* 🔹 Fit to content */
+  min-width: 180px;      /* At least 1 column width */
+  height: auto;
+  max-height: 50vh;
+  flex-wrap: wrap;
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.dropdown-menu li {
+  padding: 8px 15px;
+  cursor: pointer;
+  width: 180px;
+}
+
+.dropdown-menu li:hover {
+  background: #b7aeb0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* ===== Hamburger Menu ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-btn{
+    padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+   background-color: var(--red);
+  color: var(--pearl);
+   transition: all 0.3s ease; /* smooth animation */
+}
+.nav-btn:hover {
+  background-color: #333;
+  color: var(--pearl);
+  transform: translateY(-1px);
+}
+
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+.nav-item{
+  display: inline;
+  
+}
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    display: none;
+    padding: 15px 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .nav-links.open {
+    display: flex;
+    top:80px;
+    width: 100vw;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background: #444;
+    margin-top: 5px;
+  }
+
+  /* On mobile, tap to open dropdown (hover won't work well) */
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
