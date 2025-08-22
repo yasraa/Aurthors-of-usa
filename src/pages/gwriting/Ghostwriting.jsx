@@ -1,7 +1,7 @@
 
 import Hero from '../../components/Hero.jsx';
 
-import Nav from '../../components/nav.jsx';
+import Nav from '../../components/Nav.jsx';
 import FAQ from '../../components/Faq.jsx';
 import Sidebook from '../../assets/side-books.png'
 import Rightbook from '../../assets/book-right.png'
@@ -15,7 +15,7 @@ import img6 from '../../assets/drama.png';
 import img7 from '../../assets/novel.png';
 import img8 from '../../assets/fiction.png'
 import img9 from '../../assets/romance.png'
-import Slides from '../../components/slides.jsx';
+import Slides from '../../components/Slides.jsx';
 import Footer from '../../components/Footer.jsx';
 import Testimonials from '../../components/Testimonials.jsx';
 import Location from '../../components/Location.jsx';

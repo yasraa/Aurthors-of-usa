@@ -1,5 +1,5 @@
 
-import Nav from '../../components/nav';
+import Nav from '../../components/Nav';
 import Hero from '../../components/Hero';
 import Footer from '../../components/Footer';
 import Sidebook from '../../assets/edir.png'

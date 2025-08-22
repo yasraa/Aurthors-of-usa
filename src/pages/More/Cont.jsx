@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/hero.css'
 import Contact from "../../components/Contact"
 import Footer from '../../components/Footer'
-import Nav from '../../components/nav'
+import Nav from '../../components/Nav'
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
