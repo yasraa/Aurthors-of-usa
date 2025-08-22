@@ -106,7 +106,7 @@ import Nashville from "./pages/location/Nashville";
 import Phoenix from "./pages/location/Phoenix";
 import Portland from "./pages/location/Portland";
 import Saltlake from "./pages/location/Saltlake";
-import Sanfrancisco from "./pages/location/Sanfrancisco";
+import Sanfrancisco from "./pages/location/SanFrancisco";
 import Sarasota from "./pages/location/Sarasota";
 
 
