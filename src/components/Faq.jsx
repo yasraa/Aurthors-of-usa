@@ -19,7 +19,7 @@ const FAQ = ({ data }) => {
           style={{
             backgroundColor: "var(--red)",
             padding: "15px 20px",
-            width: "75vw",
+            width: "100%",
             borderRadius: "5px",
             color: "var(--pearl)",
             marginBottom: "10px",

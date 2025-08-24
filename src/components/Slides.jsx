@@ -107,7 +107,7 @@ const Slides = ({tabs}) => {
       <div className='slco'>
           <div className="slco-h">
         <h2> {activeTab.heading}</h2>
-        <p style={{ maxWidth: "500px", margin: "0 auto 20px", fontSize: "18px" }}>
+        <p>
           {activeTab.paragraph}
         </p>
         <div className="hero1btn">
@@ -118,7 +118,6 @@ const Slides = ({tabs}) => {
         <img
           src={activeTab.img}
           alt={activeTab.label}
-          style={{ height:'360px',width: "360px", borderRadius: "10px" }}
         />
       </div>
       </div>

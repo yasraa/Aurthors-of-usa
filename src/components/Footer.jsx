@@ -15,9 +15,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="footer-contact">
-                <div className="left-footer">
 
-                </div>
                 <div className="right-footer">
                  <div className="con-foot">
                     <h2>Let's Get Started</h2>

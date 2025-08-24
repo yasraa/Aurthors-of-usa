@@ -1,14 +1,16 @@
 .location{
-    height: 50vh;
+    height:fit-content;
     padding: 20px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    width: 100vw;
 }
 .location h4{
     font-size: 35px;
     color: var(--blue);
+    text-align: center;
 }
 .cities ul{
     display: flex;
@@ -23,3 +25,24 @@
 .cities ul li a{
     color: var(--blue);
 }
+
+    @media (max-width: 745px) {
+        .location{
+            padding: 20px 20px;
+            gap: 20px;
+        }
+        .location h4{
+    font-size: 20px;
+    }
+    .cities{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .cities ul{
+        gap: 10px;
+        height: 52vh;
+    }
+    .cities ul li{
+        font-size: 12px
+    }
+    }

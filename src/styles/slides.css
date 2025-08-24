@@ -7,13 +7,14 @@
     flex-wrap: wrap;
 }
 .slco img{
-    width: 326px;
+    width: 526px;
     height: auto;
 }
 .slco-h{
     gap: 20px;
     display: flex;
     flex-direction: column;
+    width: 40vw;
 }
 .slco-h h2{
     font-size: 35px;
@@ -69,6 +70,10 @@ width: auto;
 }
 .sec-slide-btn{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 8px;
 }
 .sec-slide-btn button{
               padding: 10px 20px;
@@ -76,6 +81,9 @@ width: auto;
               cursor: pointer;
               border-radius: 5px;
 }
+    .slco-h p{
+        font-size: 18px;
+    }
 @media (max-width: 945px) {
     .sec-slide-btn button{
         padding: 5px;
@@ -120,4 +128,18 @@ width: auto;
     .sec-slide h2 {
         font-size: 15px;
     }
+    .slco-h{
+        gap: 10px;
+        width: 100%;
+    }
+    .slco-h p{
+        font-size: 12px;
+    }
+    .slco{
+        gap: 10px;
+    }
+    .slco img{
+    width: 250px;
+    height: auto;
+}
 }

@@ -63,25 +63,13 @@ const Testimonials = ({service}) => {
     <div className="services">
       <div className="serv">
         <h1 style={{textAlign:"center"}}>Our Services</h1>
-        <p style={{textAlign:"center"}}>Our immensely skilled authors are well-versed in how to create compelling and thought provoking work regardless of the genre.
+        <p >Our immensely skilled authors are well-versed in how to create compelling and thought provoking work regardless of the genre.
              It brings us tremendous pride to share that we are powered by industry veterans who produce top-notch work.</p>
-    <div style={{ position: "relative", width: "977px", margin: "auto" }}>
+    <div className="servcon">
       {/* Left Arrow */}
       <button
         onClick={scrollLeft}
-        style={{
-          position: "absolute",
-          left: 0,
-          top: "50%",
-          transform: "translateY(-50%)",
-          zIndex: 2,
-          background: "var(--blue)",
-          color: "#fff",
-          border: "none",
-          padding: "15px",
-          cursor: "pointer",
-          borderRadius:"50%"
-        }}
+      className="lefarr"
       >
         ◀
       </button>
@@ -89,45 +77,24 @@ const Testimonials = ({service}) => {
       {/* Scrollable container */}
       <div
         ref={sliderRef}
-        style={{
-          display: "flex",
-          overflowX: "auto",
-          scrollBehavior: "smooth",
-          gap: "20px",
-          padding: "20px",
-          scrollbarWidth: "none"
-        }}
+        className="servmain"
       >
         {sliderData.map((item, index) => (
           <div
             key={index}
-            style={{
-              width: "300px",
-              height: "300px",
-              background: "#f8f8f8",
-              borderRadius: "10px",
-              padding: "15px",
-              boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-              flexShrink: 0,
-              display:"flex",
-              flexDirection:"column",
-              justifyContent:"center",
-              alignItems:"center"
-            }}
+          className="servcard"
           >
             <img
               src={item.img}
               alt={item.title}
-              style={{
-                width: "70px",
-                height: "auto",
-                
-              }}
+
             />
-            <h3 style={{ margin: "10px 0 5px" }}>{item.title}</h3>
-            <p style={{ fontSize: "14px", color: "#555",textAlign:"center" }}>
+            <div className="servcardcon">
+            <h3>{item.title}</h3>
+            <p >
               {item.description}
             </p>
+            </div>
           </div>
         ))}
       </div>
@@ -135,19 +102,7 @@ const Testimonials = ({service}) => {
       {/* Right Arrow */}
       <button
         onClick={scrollRight}
-        style={{
-          position: "absolute",
-          right: 0,
-          top: "50%",
-          transform: "translateY(-50%)",
-          zIndex: 2,
-          background: "var(--blue)",
-          color: "#fff",
-          border: "none",
-          padding: "15px",
-          cursor: "pointer",
-          borderRadius:"50%"
-        }}
+className="rigarr"
       >
         ▶
       </button>

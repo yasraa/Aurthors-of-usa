@@ -5,10 +5,24 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    padding-top: 40px ;
+    padding: 40px 100px;
 }
 .faq-container h3{
     font-size: 35px;
     color: var(--blue);
     margin-bottom:20px ;
+    text-align: center;
 }
+   @media (max-width: 945px) {
+
+   }
+
+     @media (max-width: 745px) {
+     .faq-container{
+        padding: 20px 20px;
+
+     }
+     .faq-container h3{
+        font-size: 20px;
+     }
+     }
