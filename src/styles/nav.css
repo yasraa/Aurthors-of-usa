@@ -215,7 +215,7 @@ align-items: center;
     width: 200px;
     height: auto;
     display: none;
-    padding: 15px 0;
+    padding: 15px 20px;
     border-radius: 5px 0 0 5px;
   }
 
@@ -224,17 +224,15 @@ align-items: center;
     top:80px;
     width: 100vw;
   }
-  .nav-links.open  li{
- padding-left: 20px;
-  }
+
 
   .dropdown-menu {
     position: static;
     display: none;
     background: var(--pink);
     margin-top: 5px;
-    width: 100vw;
-        height: fit-content;
+max-height: 60vh;
+max-width: 100%;
   }
 
   /* On mobile, tap to open dropdown (hover won't work well) */
