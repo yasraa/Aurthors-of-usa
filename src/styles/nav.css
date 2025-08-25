@@ -223,6 +223,8 @@ align-items: center;
     display: flex;
     top:80px;
     width: 100vw;
+    height: 100vh;
+    overflow: scroll;
   }
 
 
