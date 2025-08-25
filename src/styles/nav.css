@@ -233,7 +233,8 @@ align-items: center;
     display: none;
     background: var(--pink);
     margin-top: 5px;
-    max-height: 60vh;
+    width: 100vw;
+        height: fit-content;
   }
 
   /* On mobile, tap to open dropdown (hover won't work well) */
