@@ -44,15 +44,16 @@ const Main = ({ mainones,mainthrees }) => {
             <div className="main-two">
                 <div className="quality-work">
                     <img src={Quality}  />
-                    <h3>Quality Work</h3>
+                    
                     <div className="wrap">
+                        <h3>Quality Work</h3>
                     <p>
                         We’re committed to providing top-quality work every time. Our best ghostwriters for hire put their expertise into creating
                         the perfect strategy for each project, ensuring your story is told exactly how you dream of it.
                     </p>
                     </div>
                 </div>
-                <div className="delivery">
+                <div className="quality-work">
                     <img src={Delivery} alt="" />
                     <div className="wrap">
                     <h3>Timely Delivery</h3>
@@ -62,7 +63,7 @@ const Main = ({ mainones,mainthrees }) => {
                     </p>
                     </div>
                 </div>
-                <div className="satisfaction">
+                <div className="quality-work">
                     <img src={Satisfaction} alt="" />
                     <div className="wrap">
                     <h3>Costumer Satisfaction</h3>
@@ -72,7 +73,7 @@ const Main = ({ mainones,mainthrees }) => {
                     </p>
                     </div>
                 </div>
-                <div className="ownership">
+                <div className="quality-work">
                     <img src={Ownership} alt="" />
                     <div className="wrap">
                     <h3>100% Ownership</h3>

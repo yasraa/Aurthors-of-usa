@@ -44,7 +44,7 @@
     align-items: center;
     gap: 30px;
 }
-.main-two div{
+.main-two .quality-work{
     width: 250px;
     border: 1px solid var(--red);
     background-color: var(--red);
@@ -149,6 +149,7 @@ height: auto;
     .main-two{
         flex-wrap: wrap;
         height: fit-content;
+        padding: 20px 20px;
     }
     .main-three{
         padding: 20px;
@@ -167,11 +168,12 @@ height: auto;
 
 }
 @media (max-width: 750px) {
-.main-two div{
-     width: 70vw;
+.main-two .quality-work{
+     width: 100%;
      padding: 10px;
-     height: 27vh;
-     margin-top:10px ;
+     height: 23vh;
+     margin-top:0px ;
+
 }
 .main-two p{
     font-size: 12px;
@@ -179,5 +181,9 @@ height: auto;
 .main-two div img{
     width: 40px;
 height: auto;
+}
+.wrap{
+    text-align: center;
+   
 }
 }
